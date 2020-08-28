@@ -5,10 +5,7 @@ from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_v1_5
 from Crypto.Hash import SHA512
-try:
-    from encryption import Encryption
-except ModuleNotFoundError:
-    from token_generator.encryption import Encryption
+from encryption import Encryption
 
 
 class AsymmetricEncryption(Encryption):

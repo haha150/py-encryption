@@ -2,10 +2,7 @@ import base64
 import json
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
-try:
-    from encryption import Encryption
-except ModuleNotFoundError:
-    from token_generator.encryption import Encryption
+from encryption import Encryption
 
 
 class SymmetricEncryption(Encryption):
